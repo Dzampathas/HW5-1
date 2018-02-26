@@ -136,7 +136,7 @@ function draw() {
     rect(320, 495, 80, 5);
 		fill(100, 104, 0);
     ellipse(200,420,20,20);
-	  ellipse(300,a20,20,20);
+	  ellipse(300,420,20,20);
 		fill(255, 204, 0);
 		ellipse(mouseX,mouseY,70,500);
 		ellipse(mouseX+300,mouseY,70,500);
