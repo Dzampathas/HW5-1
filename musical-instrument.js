@@ -129,17 +129,17 @@ function draw() {
     ellipse(250, 450,250, 250);
 		fill(255, 133, 15);
     ellipse(250,470,50,50);
+		fill(255, 204, 0);
+		ellipse(mouseX,mouseY+640,100,1000);
+		ellipse(mouseX+350,mouseY+600,100,1000);
+		fill(100, 104, 0);
+    ellipse(200,420,20,20);
+	  ellipse(300,420,20,20);
 		fill(255, 100, 20);
     rect(100, 465, 80, 5);
     rect(100, 495, 80, 5);
 		rect(320, 465, 80, 5);
-    rect(320, 495, 80, 5);
-		fill(100, 104, 0);
-    ellipse(200,420,20,20);
-	  ellipse(300,420,20,20);
-		fill(255, 204, 0);
-		ellipse(mouseX,mouseY,70,500);
-		ellipse(mouseX+300,mouseY,70,500);
+    rect(320, 495, 80, 5); 
   }
 }
 
