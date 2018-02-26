@@ -90,26 +90,34 @@ function draw() {
     noStroke();
     ellipse(300, 150, 80, 30);
 		triangle(300, 150, 350, 130, 350, 170);
+		fill(255);
+		ellipse(280, 150, 5, 5);
     
   }
   if (playingS) {
-     fill(0,100,10);
+     fill(0,100,200);
      noStroke();
      ellipse(200, 50, 80, 30);
 		triangle(200, 50, 250, 30, 250, 70);
+		fill(255);
+		ellipse(180, 50, 5, 5);
   }
   if (playingD) {
-    fill(20,255,100);
+    fill(255,50,100);
     noStroke();
     ellipse(400, 350, 80, 30);
 		triangle(400, 350, 450, 330, 450, 370);
+		fill(255);
+		ellipse(380, 350, 5, 5);
     
   }
   if (playingF) {
-		fill(10,0,255);
+		fill(150,100,50);
     noStroke();
     ellipse(100, 250, 80, 30);
 		triangle(100, 250, 150, 230, 150, 270);
+		fill(255);
+		ellipse(80, 250, 5, 5);
 	}
     
   if (playingG) {
