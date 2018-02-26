@@ -123,20 +123,23 @@ function draw() {
   if (playingG) {
     noStroke();
 		fill(255, 204, 0);
-		triangle(135, 200, 180,80, 265, 200);
-		triangle(245, 200, 320,80, 365, 200);
+		triangle(135, 400, 180,280, 265, 400);
+		triangle(245, 400, 320,280, 365, 400);
 		fill(255, 204, 0);
-    ellipse(250, 250,250, 250);
+    ellipse(250, 450,250, 250);
 		fill(255, 133, 15);
-    ellipse(250,270,50,50);
+    ellipse(250,470,50,50);
 		fill(255, 100, 20);
-    rect(100, 265, 80, 5);
-    rect(100, 295, 80, 5);
-		rect(320, 265, 80, 5);
-    rect(320, 295, 80, 5);
+    rect(100, 465, 80, 5);
+    rect(100, 495, 80, 5);
+		rect(320, 465, 80, 5);
+    rect(320, 495, 80, 5);
 		fill(100, 104, 0);
-    ellipse(200,220,20,20);
-	  ellipse(300,220,20,20);
+    ellipse(200,420,20,20);
+	  ellipse(300,a20,20,20);
+		fill(255, 204, 0);
+		ellipse(mouseX,mouseY,70,500);
+		ellipse(mouseX+300,mouseY,70,500);
   }
 }
 
@@ -162,4 +165,4 @@ function keyReleased() {
   if (osc) {
     osc.amp(0, 0.5);
   }
-}
+} 
