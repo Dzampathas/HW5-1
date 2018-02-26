@@ -1,10 +1,11 @@
 var x = [];
 var y = [];
 var r = [];
+var smoke= 100
 
 function setup() {
   createCanvas(400, 400);
-    for (var i = 0; i < 100; i++) {
+    for (var i = 0; i < smoke; i++) {
       
     x[i] = random(200, 210);
 		y[i] = random(0, 300);
@@ -21,7 +22,7 @@ function draw() {
   rect(195, height, 30, -100);
 
   // darker as it gets closer to 0
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < smoke; i++) {
   push();
   fill(y[i]);
   translate(x[i], y[i]);
@@ -38,7 +39,7 @@ function draw() {
   
   // if reach past the top a bunch
   if (y[i] < 0) {
-    y[i] = 250;
+    y[i] = height-100;
   }
 }
 }
