@@ -1,3 +1,5 @@
+var fish;
+var cat;
 var freqA = 100;
 var freqS = 200;
 var freqD = 300;
@@ -12,8 +14,19 @@ var playingS = false;
 var playingD = false;
 var playingF = false;
 var playingG = false;
+var mySound;
+
+function preload() {
+  mySound = loadSound('./doorbell-1.mp3');
+
+  //fish = loadSound('./Fish Splashing-SoundBible.com-250179430 (1).mp3 ');
+ // cat = loadSound('./Cat Meow-SoundBible.com-1977450526.mp3');
+  //if (!fish.isLoaded()) {noLoop();};
+}
 
 function setup() {
+    mySound.setVolume(1);
+  mySound.play();
   createCanvas (500, 500);
   backgroundColor = color(255, 0, 255);
   textAlign(CENTER);
@@ -64,11 +77,17 @@ function keyPressed() {
   if (key == 'A') {
     osc = oscA;
     playingA = true;
+    fish.setVolume(0.1);
+  	fish.play();
   } else if (key == 'S') {
     osc = oscS;
     playingS = true;
+    fish.setVolume(0.1);
+  	fish.play();
   } else if (key == 'D') {
     osc = oscD;
+    fish.setVolume(0.1);
+  	fish.play();
     playingD = true;
   } else if (key == 'F') {
     osc = oscF;
